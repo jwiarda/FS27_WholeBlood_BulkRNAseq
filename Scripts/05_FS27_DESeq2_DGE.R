@@ -65,7 +65,7 @@ treatment <- factor(target$treatment)
 treatment
 
 # Create DESeq2 matrix:
-dds<-DESeqDataSetFromMatrix(counts, colData=target, design = ~treatment)
+dds<-DESeqDataSetFromMatrix(countData=counts, colData=target, design = ~treatment)
 dds
 
 # filter genes
